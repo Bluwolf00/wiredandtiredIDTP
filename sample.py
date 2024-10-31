@@ -124,10 +124,10 @@ if (connect_code == 0):
     # Wait for the on_connect function to fire, keep notifying the user that the system is trying to connect
     try:
         while Connected != True:
-            print(txtcolour.WARNING + "WARN: Reattempting Connection" + txtcolour.ENDC)
+            print(console_colours.WARNING + "WARN: Reattempting Connection" + console_colours.ENDC)
             time.sleep(0.1)
     except KeyboardInterrupt:
-        print(txtcolour.ERROR + "ERROR: Could not Connect" + txtcolour.ENDC)
+        print(console_colours.ERROR + "ERROR: Could not Connect" + console_colours.ENDC)
 
     # Keep the program looping for the callback functions (on_message)
     try:
