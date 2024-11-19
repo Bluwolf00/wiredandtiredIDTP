@@ -9,7 +9,8 @@ import random
 import time
 import tkinter as tk
 from tkinter import ttk
-import ttkthemes
+# import ttkthemes
+import customtkinter as csTk
 import threading
 
 def write_to_JSON(filePath, newData):
@@ -26,7 +27,7 @@ def write_to_JSON(filePath, newData):
         json.dump(obj, f, indent=4)
 
 # m = ttkthemes.ThemedTk(screenName=None,baseName=None,className='Tk',useTk=1,theme='equilux')
-m = ttkthemes.ThemedTk(theme='arc')
+m = csTk.CTk()
 m.title('Sensor Panel')
 # print(f'Available Themes: {m.get_themes()}')
 
