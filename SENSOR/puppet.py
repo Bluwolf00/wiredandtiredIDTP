@@ -67,7 +67,7 @@ def sensor_loop(debug_on, pin, name):
             "time": datetime.now().timestamp().__int__()
         }
 
-        filePath = "wiredandtiredIDTP/records/record.json"
+        filePath = "wiredandtiredIDTP/SENSOR/records/record.json"
 
         # Call writing function
         write_to_JSON(filePath, newData)
